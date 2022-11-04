@@ -2,18 +2,32 @@
 
 <script>
 
+    function pulaLinha() {
+        document.write("<br>");
+    };
+
+    function mostra(frase) {
+        document.write(frase)
+    }
+
     var ano = 2022;
     
-    document.write("Poul nasceu em " + (ano - 31));
-    document.write("<br>");
-    document.write("Jackson nasceu em " + (ano - 27));
-    document.write("<br>");
-    document.write("Serena nasceu em " + (ano - 19));
-    document.write("<br>");
+    mostra("Poul nasceu em " + (ano - 31));
+    pulaLinha();
 
-    var media = (31 + 27 + 19 )/3;
+    mostra("Jackson nasceu em " + (ano - 27));
+    pulaLinha();
 
-    document.write("a media das idades é " + Math.round(media));
+    mostra("Serena nasceu em " + (ano - 19));
+    pulaLinha();
+
+    var idadePoul = 31;
+    var idadeJackson = 27;
+    var idadeSerena = 19;
+
+    var media = (idadePoul + idadeJackson + idadeSerena )/3;
+
+    mostra("a media das idades é " + Math.round(media));
 
     
 
