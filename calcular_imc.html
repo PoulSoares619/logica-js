@@ -20,5 +20,17 @@
     var inserirPeso = prompt(nome + ", qual a sua peso");
 
     var imc = claculaImc(inserirAltura, inserirPeso);
-    mostra(nome + " o seu IMC é: " + imc + " %" )
+
+    mostra(nome + " o seu IMC é: " + imc + " %" );
+
+    if (imc < 18.5) {
+        mostra("Seu IMC  está abaixo do recomendado!");
+    }
+    if(imc > 35) {
+        mostra("Seu IMC esta acima do recomendado!");
+    }
+    if(imc >= 18.5 && imc <= 35) {
+        mostra("Parabens! Seu Imc é o ideal.");
+    }
+
 </script>

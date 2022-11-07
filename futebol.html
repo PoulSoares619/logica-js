@@ -15,9 +15,19 @@
     var vitorias = parseInt(prompt("Informe o numero de vitorias de " + time));
     var empates =  parseInt(prompt("Informe o numero de empates de " + time));
 
-    var  pontos = (vitorias * 3) + empates;
+    var pontos = (vitorias * 3) + empates;
 
-    mostra( time + " possui " + pontos + " pontos!")
+    mostra( time + " possui " + pontos + " pontos!");
+
+    if (pontos > 28){
+        mostra("Seu time esta melhor que o ano passado!");
+    }
+    if (pontos < 28){
+        mostra("Seu time esta pior que o ano passado!");
+    }
+    if (pontos == 28){
+        mostra("Seu time esta igual ao ano passado!");
+    }
 
 
 </script>
