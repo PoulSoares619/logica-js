@@ -12,12 +12,23 @@
     }
 
     var  numerPensado = Math.round(Math.random() *  10);
-    var numeroChutado = parseInt(prompt("Chute um numero:"));
+    var tentativas = 1
 
-    if ( numerPensado == numeroChutado) {
-        mostra("Parabens! voce acertou.");
-    } else {
-        mostra("Você errou, o numero pensado foi " + numerPensado + "!");
+
+    while(tentativas <= 3) {
+
+        var numeroChutado = parseInt(prompt("Chute um numero:"));
+
+        if ( numerPensado == numeroChutado) {
+
+            mostra("Parabens voce ACERTOU! o numero pensado foi " + numerPensado + ".");
+            break;
+
+        } else {
+            mostra("Você ERROU!");
+        }
+        tentativas ++;
+        
     }
     
     
