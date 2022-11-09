@@ -4,7 +4,23 @@
 
 <script>
 
-    var segredos = [10,6,5,1];
+    function sorteia() {
+
+        Math.round(Math.random()*10);
+
+    }
+    
+    function sorteiaNumero(quantidade){
+
+        var segredos = [];
+        var numero = 1;
+
+        while ( numero <= quantidade ){
+            
+        }
+    }
+
+    var segredos = sorteiaNumero(3);
 
     var input = document.querySelector("input");
     input.focus()
@@ -29,7 +45,7 @@
                 alert(" Você errou!!!!")
         } 
 
-        input.value = "";
+        input.value = ""; 
         input.focus();
     }
 
