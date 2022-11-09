@@ -1,0 +1,26 @@
+
+<input>
+<button>Clique para comparar</button>
+
+<script>
+
+    var segredo = Math.round ( Math.random ()*10);
+    var input = document.querySelector("input");
+    input.focus()
+
+    function compare(){
+        if (input.value == segredo){
+            alert("Parabens !!! VOCÊ ACERTOU!!");
+        } else {
+            alert("Você errou!!!!!!!!");
+
+        }
+        input.value = "";
+        input.focus();
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = compare;
+    
+    
+</script> 
